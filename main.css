@@ -1,0 +1,162 @@
+
+* {
+  box-sizing: border-box;
+} 
+html, body {
+  height: 100%;
+  width: 100%;
+ 
+  margin: 0;
+}
+.top_grass, .runway1, .bottom_grass, .runway2 {
+  position: relative;
+}
+
+.top_grass {
+  height: 25%;
+  background: green;
+}
+.tree {
+  position: absolute;
+  
+}
+.tree:nth-child(1) {
+  height: 35%;
+  width: auto;
+  top: 4%;
+}
+.tree:nth-child(2) {
+  height: 35%;
+  width: auto;
+  top: 8%;
+  left: 10%;
+}
+.tree:nth-child(3) {
+  height: 35%;
+  width: auto;
+  top: 8%;
+  right: 10%;
+}
+.tree:nth-child(4) {
+  height: 35%;
+  width: auto;
+  top: 18%;
+  right: 20%;
+}
+.tree:nth-child(5) {
+  height: 35%;
+  width: auto;
+  top: 28%;
+  left: 90%;
+}
+.tree:nth-child(6) {
+  height: 35%;
+  width: auto;
+  top: 35%;
+  left: 41%;
+}
+.tree:nth-child(7) {
+  height: 35%;
+  width: auto;
+  top: 29%;
+  right: 10%;
+}
+.tree:nth-child(8) {
+  height: 35%;
+  width: auto;
+  top: 48%;
+  right: 60%;
+}
+.tree:nth-child(9) {
+  height: 35%;
+  width: auto;
+  top: 4%;
+  right: 30%;
+}
+.tree:nth-child(10) {
+  height: 35%;
+  width: auto;
+  top: 28%;
+  left: 15%;
+}
+.tree:nth-child(11) {
+  height: 35%;
+  width: auto;
+  top: 8%;
+  left: 45%;
+}
+.tree:nth-child(12) {
+  height: 35%;
+  width: auto;
+  top: 58%;
+  left: 55%;
+}
+
+
+.runway1 {
+  height: 25%;
+  background: grey;
+
+}
+.line1 {
+  border: 5px dashed whitesmoke;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  top: 37.5%;
+}
+.bottom_grass {
+  height: 25%;
+  background: green;
+}
+.runway2 {
+  height: 25%;
+ background: grey; 
+}
+.line2 {
+  border: 5px dashed whitesmoke;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  top: 87.5%;
+}
+#parking {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+}
+.plane1 {
+  position: absolute;
+  transform: scale(0.7);
+  top: 24.9%;
+  left: 0%;
+  animation: takeoff 6s cubic-bezier(0.55, 0.06, 0.68, 0.19) infinite;
+}
+.plane2 {
+  position: absolute;
+  height: 200px;
+  top: 78.2%;
+  right: -27%;
+animation: landing 6s cubic-bezier(0, 0, 0.2, 1) infinite
+}
+.plane2 img {
+  height: 160px;
+  position: inherit;
+  animation: touchdown 8s normal ;
+}
+
+/*//KEYFRAMES//*/
+
+@keyframes takeoff{
+  100% { transform: scale(2.6) translate(2000px)}
+  
+}
+@keyframes landing {
+  
+  60% { transform: translate(-1220px) scale(0.7); top: 78.2% }
+  73% { transform: translate(-1220px) scale(0.7); top: 78.2% }
+  87% {transform: translate(-1220px) scale(0.7) rotateZ(90deg); top: 71% }  
+  100% { transform: translate(-1220px) scale(0.7) rotateZ(90deg) translateX(-400px); top: 77%
+  }
+}
