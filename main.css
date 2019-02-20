@@ -138,7 +138,7 @@ html, body {
   height: 200px;
   top: 78.2%;
   right: -27%;
-animation: landing 6s cubic-bezier(0, 0, 0.2, 1) infinite
+animation: landing 10s cubic-bezier(0, 0, 0.2, 1) infinite
 }
 .plane2 img {
   height: 160px;
@@ -154,9 +154,12 @@ animation: landing 6s cubic-bezier(0, 0, 0.2, 1) infinite
 }
 @keyframes landing {
   
-  60% { transform: translate(-1220px) scale(0.7); top: 78.2% }
-  73% { transform: translate(-1220px) scale(0.7); top: 78.2% }
-  87% {transform: translate(-1220px) scale(0.7) rotateZ(90deg); top: 71% }  
-  100% { transform: translate(-1220px) scale(0.7) rotateZ(90deg) translateX(-400px); top: 77%
+  60% { transform: translate(-1750px) scale(0.7); top: 78.2% }
+  73% { transform: translate(-1750px) scale(0.7); top: 78.2% }
+  87% {transform: translate(-1750px) scale(0.7) rotateZ(90deg); top: 71% }  
+  95% { transform: translate(-1750px) scale(0.7) rotateZ(90deg) translateX(-400px); top: 77%
+  }
+  
+  100% { transform: translate(-1750px) scale(0.7) rotateZ(90deg) translateX(-400px); top: 77%
   }
 }
